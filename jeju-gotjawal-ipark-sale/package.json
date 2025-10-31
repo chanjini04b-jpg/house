@@ -1,0 +1,12 @@
+{
+  "name": "jeju-gotjawal-ipark-sale",
+  "version": "1.0.0",
+  "description": "제주 곶자왈아이파크 매물 랜딩페이지",
+  "scripts": {
+    "build:css": "postcss styles.css -o dist/styles.css",
+    "watch:css": "postcss styles.css -o dist/styles.css --watch"
+  },
+  "keywords": ["제주", "곶자왈아이파크", "매매", "전세", "집주인직거래", "SEO", "실사진"],
+  "author": "집주인",
+  "license": "MIT"
+}

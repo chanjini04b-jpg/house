@@ -473,11 +473,13 @@
     z-index: 1;
   }
   .slide-btns-center {
-    flex-direction: row;
+    flex-direction: row !important;
     gap: 8px;
     margin-top: 8px;
-    z-index: 2;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
   }
   #current-index {
     font-size: 13px;

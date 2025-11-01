@@ -44,9 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
     <header>
         <div class="header-inline header-inline-full">
-            <span class="header-title">🌲 곶자왈아이파크</span>
+            <span class="header-title">🌲 제주 곶자왈아이파크</span>
             <span class="header-badge">시세보다 낮은 급매가</span>
-            <button class="header-btn">💰 매매</button>
+            <span style="flex:1"></span>
+            <button class="header-btn" style="margin-left:auto;">💰 매매</button>
             <span class="header-priority">🔥 매매우선 진행 | 32평형 / 바로 입주 가능 | <span class="header-price">매매 5억 / 전세 4.3억</span></span>
         </div>
     </header>
@@ -91,8 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="icon">📞</span> 부동산 거래도 원하시면 안내 가능합니다.
                 </div>
                 <div class="summary-cta">
-                    <a href="tel:010-1234-5678" class="cta-btn">📞 문의하기</a>
-                    <a href="https://fin.land.naver.com/articles/2558481332" class="cta-btn naver" target="_blank">🏠 네이버부동산 현매물보기</a>
+                    <div style="width:100%;display:flex;justify-content:center;align-items:center;gap:18px;">
+                        <a href="tel:010-1234-5678" class="cta-btn">✉️ 문의하기</a>
+                        <a href="https://fin.land.naver.com/articles/2558481332" class="cta-btn naver" target="_blank">🏠 네이버부동산 현매물보기</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -120,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </button>
                 </div>
                 </div>
-                <div id="current-index" class="text-center text-sm font-semibold text-gray-500 mt-4"></div>
+                <div id="current-index" class="text-center text-sm font-semibold text-gray-500 mt-4" style="width:100%;margin-top:8px;display:flex;justify-content:center;align-items:center;"></div>
             </div>
             <p class="text-xs text-center text-gray-400 mb-8">* 전체 슬라이드는 집 전체의 고화질 실사진을 순차적으로 보여줍니다.</p>
         </section>

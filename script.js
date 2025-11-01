@@ -13,7 +13,7 @@ function renderGallery() {
 		}
 		html += `
 			<div class="gallery-card">
-				<img src="images/${img}" alt="이미지 ${i+1}" class="gallery-thumb" data-img="${img}" tabindex="0" onerror="this.style.display='none';console.error('갤러리 이미지 로드 실패:', this.src)">
+				<img src="./images/${img}" alt="이미지 ${i+1}" class="gallery-thumb" data-img="${img}" tabindex="0" onerror="this.style.display='none';console.error('갤러리 이미지 로드 실패:', this.src)">
 				${badges}
 			</div>
 		`;
@@ -54,7 +54,7 @@ function renderGallery() {
 	galleryContainer.querySelectorAll('.gallery-thumb').forEach(thumb => {
 		thumb.onclick = () => {
 			modal.classList.remove('hidden');
-			modalImg.src = `images/${thumb.dataset.img}`;
+			modalImg.src = `./images/${thumb.dataset.img}`;
 			modalImg.alt = thumb.alt;
 		};
 		thumb.onkeydown = e => {
@@ -79,7 +79,7 @@ function renderGallery() {
 function renderMap() {
 	const mapImg = document.getElementById('map-image');
 	if (mapImg) {
-		mapImg.src = 'images/Screenshot_1.jpg';
+		mapImg.src = './images/Screenshot_1.jpg';
 		mapImg.alt = '제주 곶자왈아이파크 위치 지도';
 	}
 }
@@ -105,8 +105,7 @@ function showInquiryModal() {
 	modal.innerHTML = `
 		<div class="modal-box">
 			<h2>문의 안내</h2>
-			<p>아래 이미지로 연락처와 이메일을 확인하세요.<br>복사 및 자동수집 방지를 위해 이미지로 제공합니다.</p>
-			<img src="images/number.jpg" alt="연락처 및 이메일 안내" style="max-width:320px;display:block;margin:18px auto 12px auto;border-radius:12px;box-shadow:0 2px 8px rgba(34,197,94,0.10);">
+			<p>연락처 이미지는 삭제되었습니다.</p>
 			<button class="modal-close">닫기</button>
 		</div>
 	`;
@@ -169,7 +168,7 @@ function renderSlider() {
 	function show(idx) {
 		imgEl.style.opacity = 0;
 		setTimeout(() => {
-			imgEl.src = `images/${sliderImages[idx]}`;
+			imgEl.src = `./images/${sliderImages[idx]}`;
 			imgEl.alt = `실사진 슬라이드 ${idx+1}`;
 			idxEl.textContent = `${idx+1} / ${sliderImages.length}`;
 			imgEl.style.opacity = 1;

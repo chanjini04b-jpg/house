@@ -426,3 +426,62 @@
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.12);
 }
+/* 모바일 반응형 스타일 */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .header-inline {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  .summary-card, .summary-main, .summary-features, .summary-desc {
+    padding: 0;
+    font-size: 15px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .gallery-card {
+    min-width: 0;
+    max-width: 100%;
+    padding: 4px;
+  }
+  .gallery-thumb {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  #gallery-container {
+    aspect-ratio: 4/3;
+    max-height: 260px;
+  }
+  .slide-btns-center {
+    flex-direction: column;
+    gap: 8px;
+  }
+  #current-index {
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  .cta-btn, .cta-btn.naver {
+    font-size: 15px;
+    padding: 8px 12px;
+    min-width: 120px;
+  }
+  .w-full {
+    width: 100% !important;
+  }
+  .aspect-video {
+    aspect-ratio: 16/9;
+    min-height: 180px;
+    max-height: 260px;
+  }
+  .footer-contact, .footer-author {
+    font-size: 13px;
+  }
+}
